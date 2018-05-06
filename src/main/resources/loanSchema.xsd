@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns="http://www.mulesoft.com/schemas/Mule/Schema.xsd"
+	 targetNamespace="http://www.mulesoft.com/schemas/Mule/Schema.xsd"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="getTempRequest">
+		<xs:complexType>
+			<xs:sequence>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="getTempResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="loanList">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="loan" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="timestamp" type="xs:string"/>
+										<xs:element name="tempdata" type="xs:dateTime"/>
+								
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
