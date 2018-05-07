@@ -42,6 +42,6 @@ Response:
 ```
 
 ## To-Do
-Implement Controll-Service for heater
-Implement E-Mail-Service
-Integrate additional sensor in system
+*Implement Controll-Service for heater
+*Implement E-Mail-Service in python (postfix)
+*Integrate additional sensor in system
