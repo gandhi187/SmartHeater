@@ -41,4 +41,7 @@ Response:
 </soap:Envelope>
 ```
 
-
+## To-Do
+Implement Controll-Service for heater
+Implement E-Mail-Service
+Integrate additional sensor in system
